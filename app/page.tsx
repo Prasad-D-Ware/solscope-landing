@@ -218,18 +218,21 @@ export default function Home() {
 							<Link
 								href="https://github.com/Prasad-D-Ware"
 								className="text-gray-400 hover:text-white"
+								target="__blank"
 							>
 								GitHub
 							</Link>
 							<Link
 								href="https://discord.com/oauth2/authorize?client_id=1367450794709880953&permissions=18445006240928&integration_type=0&scope=bot"
 								className="text-gray-400 hover:text-white"
+								target="__blank"
 							>
 								Discord
 							</Link>
 							<Link
 								href="https://x.com/prasadtwts"
 								className="text-gray-400 hover:text-white"
+								target="__blank"
 							>
 								Twitter
 							</Link>
