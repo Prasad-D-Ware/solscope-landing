@@ -6,8 +6,6 @@ import {
 	MessageSquare,
 	Wallet,
 	Zap,
-	BarChart3,
-	Shield,
 	MousePointerClick,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -24,7 +22,16 @@ export default function Home() {
 			<section className="relative overflow-hidden">
 				<div className="container px-4 md:px-6 mx-auto py-24 md:py-32 flex flex-col md:flex-row items-center gap-12">
 					<div className="flex-1 space-y-6 z-10">
-						<div className="text-purple-500 font-medium">SOLSCOPE BOT</div>
+						<div className="flex items-center gap-2 text-purple-500 font-medium">
+							<Image
+								src="https://static.cdnlogo.com/logos/d/23/discord-thumb.png"
+								alt="Discord Logo"
+								width={80}
+								height={80}
+								className="hover:animate-spin border border-white rounded-full "
+							/>
+							SOLSCOPE BOT
+						</div>
 						<h1 className="text-4xl md:text-6xl font-bold leading-tight">
 							Bring Solana to Discord with SolScope
 						</h1>
