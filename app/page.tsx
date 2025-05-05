@@ -33,7 +33,7 @@ export default function Home() {
 							SOLSCOPE BOT
 						</div>
 						<h1 className="text-4xl md:text-6xl font-bold leading-tight">
-							Bring Solana to Discord with SolScope
+							Bring Solana to <span className="text-[#5765F2]">Discord</span> with <span className="text-[#1DFA9C]">SolScope</span>
 						</h1>
 						<p className="text-lg text-gray-400 max-w-xl">
 							Simplify Solana wallet interactions directly in your Discord
