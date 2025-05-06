@@ -33,7 +33,8 @@ export default function Home() {
 							SOLSCOPE BOT
 						</div>
 						<h1 className="text-4xl md:text-6xl font-bold leading-tight">
-							Bring Solana to <span className="text-[#5765F2]">Discord</span> with <span className="text-[#1DFA9C]">SolScope</span>
+							Bring Solana to <span className="text-[#5765F2]">Discord</span>{" "}
+							with <span className="text-[#1DFA9C]">SolScope</span>
 						</h1>
 						<p className="text-lg text-gray-400 max-w-xl">
 							Simplify Solana wallet interactions directly in your Discord
@@ -125,7 +126,14 @@ export default function Home() {
 					<div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 						<div className="bg-black/60 p-6 rounded-xl border border-purple-500/20 hover:border-purple-500/40 transition-all">
 							<div className="h-48 mb-6 bg-purple-900/30 rounded-lg flex items-center justify-center">
-								<MessageSquare className="h-16 w-16 text-purple-400" />
+								{/* <MessageSquare className="h-16 w-16 text-purple-400" /> */}
+								<Image
+									src="start.png"
+									alt="sol"
+									width={100}
+									height={100}
+									className="rounded-lg h-full w-full"
+								/>
 							</div>
 							<h3 className="text-xl font-bold mb-2">A simple command</h3>
 							<p className="text-gray-400 mb-4">
@@ -142,11 +150,11 @@ export default function Home() {
 						<div className="bg-black/60 p-6 rounded-xl border border-purple-500/20 hover:border-purple-500/40 transition-all">
 							<div className="h-48 mb-6 bg-purple-900/30 rounded-lg flex items-center justify-center">
 								<Image
-									src="sol.png"
+									src="send.png"
 									alt="sol"
 									width={100}
 									height={100}
-									className="rounded-lg"
+									className="rounded-lg h-full w-full"
 								/>
 							</div>
 							<h3 className="text-xl font-bold mb-2">Local Transfer</h3>
@@ -164,7 +172,14 @@ export default function Home() {
 
 						<div className="bg-black/60 p-6 rounded-xl border border-purple-500/20 hover:border-purple-500/40 transition-all">
 							<div className="h-48 mb-6 bg-purple-900/30 rounded-lg flex items-center justify-center">
-								<MousePointerClick className="h-16 w-16 text-teal-400" />
+								{/* <MousePointerClick className="h-16 w-16 text-teal-400" /> */}
+								<Image
+									src="wallet.png"
+									alt="sol"
+									width={100}
+									height={100}
+									className="rounded-lg h-full w-full"
+								/>
 							</div>
 							<h3 className="text-xl font-bold mb-2">Details at Clicks</h3>
 							<p className="text-gray-400 mb-4">
