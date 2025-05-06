@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react"
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
 import { Box, OrbitControls } from "@react-three/drei"
-import { useMobile } from "@/hooks/use-mobile"
+// import { useMobile } from "@/hooks/use-mobile"
 import type * as THREE from "three"
 
 function CubeGroup() {
@@ -52,11 +52,11 @@ function CubeGroup() {
 
 function Scene() {
   const { camera } = useThree()
-  const isMobile = useMobile()
+  // const isMobile = useMobile()
 
-  useEffect(() => {
-    camera.position.z = isMobile ? 8 : 6
-  }, [camera, isMobile])
+  // useEffect(() => {
+  //   camera.position.z = isMobile ? 8 : 6
+  // }, [camera, isMobile])
 
   return (
     <>
