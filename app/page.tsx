@@ -38,7 +38,7 @@ export default function Home() {
 						</h1>
 						<p className="text-lg text-gray-400 max-w-xl">
 							Simplify Solana wallet interactions directly in your Discord
-							server. Send, receive, and manage tokens without leaving the
+							server with encryption. Send, receive securely without leaving the
 							conversation.
 						</p>
 						<div className="flex flex-wrap gap-4">
@@ -82,18 +82,18 @@ export default function Home() {
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 						<FeatureCard
 							icon={<Wallet className="h-8 w-8 text-teal-400" />}
-							title="Wallet Management"
-							description="Create and manage Solana wallets directly in Discord. Check balances, view transaction history, and more."
+							title="Secure Wallet Management"
+							description="Create and manage Solana wallets with encryption for private keys. Your security is our top priority."
 						/>
 						<FeatureCard
 							icon={<MessageSquare className="h-8 w-8 text-purple-400" />}
 							title="Send Solana Locally"
-							description="Send SOL other Discord users with simple commands. Perfect for tipping and community rewards."
+							description="Securely send SOL to other Discord users with simple commands. Perfect for tipping and community rewards."
 						/>
 						<FeatureCard
 							icon={<Zap className="h-8 w-8 text-teal-400" />}
-							title="Complete Wallet Management"
-							description="No Hassle to manage private keys, all handled by the Bot"
+							title="Encrypted Key Management"
+							description="Advanced encryption protects your private keys. Zero exposure of sensitive data, maximum security."
 						/>
 						{/* <FeatureCard
 							icon={<BarChart3 className="h-8 w-8 text-purple-400" />}
