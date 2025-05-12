@@ -5,8 +5,7 @@ import {
 	ArrowRight,
 	MessageSquare,
 	Wallet,
-	Zap,
-	MousePointerClick,
+	ArrowDown,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FeatureCard from "@/components/feature-card";
@@ -91,9 +90,9 @@ export default function Home() {
 							description="Securely send SOL to other Discord users with simple commands. Perfect for tipping and community rewards."
 						/>
 						<FeatureCard
-							icon={<Zap className="h-8 w-8 text-teal-400" />}
-							title="Encrypted Key Management"
-							description="Advanced encryption protects your private keys. Zero exposure of sensitive data, maximum security."
+							icon={<ArrowDown className="h-8 w-8 text-teal-400" />}
+							title="Import External Wallet"
+							description="Access funds for external wallets such as Phantom Backpack etc."
 						/>
 						{/* <FeatureCard
 							icon={<BarChart3 className="h-8 w-8 text-purple-400" />}
@@ -104,8 +103,8 @@ export default function Home() {
 							icon={<Shield className="h-8 w-8 text-teal-400" />}
 							title="Secure Transactions"
 							description="All transactions require confirmation and use encrypted storage for maximum security."
-						/>
-						<FeatureCard
+						/> */}
+						{/* <FeatureCard
 							icon={<ArrowRight className="h-8 w-8 text-purple-400" />}
 							title="Advanced Commands"
 							description="Power users can access advanced features like NFT viewing, staking, and DeFi integrations."
