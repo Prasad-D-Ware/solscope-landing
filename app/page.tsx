@@ -6,11 +6,14 @@ import {
 	MessageSquare,
 	Wallet,
 	ArrowDown,
+	Mail,
+	MessageCircle,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import FeatureCard from "@/components/feature-card";
 import CubeAnimation from "@/components/cube-animation";
 import NavBar from "@/components/nav-bar";
+import BotStatus from "@/components/bot-status";
 
 export default function Home() {
 	return (
@@ -29,7 +32,10 @@ export default function Home() {
 								height={80}
 								className="hover:animate-spin border border-white rounded-full "
 							/>
-							SOLSCOPE BOT
+							<div className="flex flex-col gap-2">
+								<span>SOLSCOPE BOT</span>
+								<BotStatus isOnline={false} />
+							</div>
 						</div>
 						<h1 className="text-4xl md:text-6xl font-bold leading-tight">
 							Bring Solana to <span className="text-[#5765F2]">Discord</span>{" "}
@@ -41,7 +47,7 @@ export default function Home() {
 							conversation.
 						</p>
 						<div className="flex flex-wrap gap-4">
-							<Button
+							{/* <Button
 								className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-8 py-6"
 								onClick={() => {
 									window.location.href =
@@ -50,13 +56,14 @@ export default function Home() {
 							>
 								Add to Discord
 								<ArrowRight className="ml-2 h-4 w-4" />
+							</Button> */}
+							<Button
+								className="bg-purple-600 hover:bg-purple-700 text-white rounded-full px-8 py-6"
+								onClick={() => window.open('https://discord.gg/jf4ABXsh', '_blank')}
+							>
+								Join Discord to get it Online
+								<MessageCircle className="ml-2 h-4 w-4" />
 							</Button>
-							{/* <Button
-                variant="outline"
-                className="border-purple-600 text-purple-500 hover:bg-purple-950/20 rounded-full px-8 py-6"
-              >
-                View Documentation
-              </Button> */}
 						</div>
 					</div>
 					<div className="flex-1 relative h-[400px] md:h-[500px]">
@@ -190,6 +197,69 @@ export default function Home() {
 							>
 								Enable Notifications <ArrowRight className="ml-2 h-4 w-4" />
 							</Button> */}
+						</div>
+					</div>
+				</div>
+			</section>
+
+			{/* Contact Section */}
+			<section className="py-20 bg-gradient-to-b from-purple-950/20 to-black">
+				<div className="container px-4 md:px-6 mx-auto">
+					<div className="text-center mb-16">
+						<h2 className="text-3xl font-bold mb-4">
+							Interested in Trying SolScope?
+						</h2>
+						<p className="text-gray-400 max-w-2xl mx-auto">
+							The bot is currently offline for maintenance and improvements. 
+							Get in touch with us to be notified when it's back online or to arrange a demo.
+						</p>
+					</div>
+					
+					<div className=" max-w-4xl mx-auto w-96">
+						{/* <div className="bg-black/60 p-8 rounded-xl border border-purple-500/20">
+							<div className="flex items-center gap-4 mb-6">
+								<div className="h-12 w-12 bg-purple-600 rounded-full flex items-center justify-center">
+									<Mail className="h-6 w-6 text-white" />
+								</div>
+								<div>
+									<h3 className="text-xl font-bold">Email Us</h3>
+									<p className="text-gray-400">Get in touch directly</p>
+								</div>
+							</div>
+							<p className="text-gray-300 mb-6">
+								Reach out to us for questions, demo requests, or to be added to our early access list.
+							</p>
+							<Button
+								variant="outline"
+								className="border-purple-600 text-purple-400 hover:bg-purple-950/20 w-full"
+								onClick={() => window.location.href = 'mailto:prasadware11@gmail.com?subject=SolScope Interest&body=Hi, I\'m interested in trying out SolScope...'}
+							>
+								Send Email
+								<Mail className="ml-2 h-4 w-4" />
+							</Button>
+						</div> */}
+
+						<div className="bg-black/60 p-8 rounded-xl border border-teal-500/20">
+							<div className="flex items-center gap-4 mb-6">
+								<div className="h-12 w-12 bg-teal-600 rounded-full flex items-center justify-center">
+									<MessageCircle className="h-6 w-6 text-white" />
+								</div>
+								<div>
+									<h3 className="text-xl font-bold">Discord Community</h3>
+									<p className="text-gray-400">Join our community</p>
+								</div>
+							</div>
+							<p className="text-gray-300 mb-6">
+								Connect with other users, get updates, and be the first to know when SolScope is back online.
+							</p>
+							<Button
+								variant="outline"
+								className="border-teal-600 text-teal-400 hover:bg-teal-950/20 w-full hover:text-white"
+								onClick={() => window.open('https://discord.gg/jf4ABXsh', '_blank')}
+							>
+								Join Discord
+								<MessageCircle className="ml-2 h-4 w-4" />
+							</Button>
 						</div>
 					</div>
 				</div>
